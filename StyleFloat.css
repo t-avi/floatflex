@@ -1,0 +1,201 @@
+﻿body {
+    background-image: url(392824567.jpg);
+    font-family: 'Aref Ruqaa', serif;
+}
+
+h1 
+{
+    text-align: left;
+    color: blanchedalmond;
+} 
+
+.main
+{
+    margin:0 auto;
+    width:800px;
+    background-color: grey;    
+    border-radius: 20px;
+    clear: both;
+}
+
+.follow_us_icon
+{
+	width: 60px;
+	height: 60px;
+}
+
+.main > header
+{
+    height: 70px; 
+}
+   
+.main > header > #upper
+{
+    background-color: lightgreen;
+    position: absolute;
+    top: 5px;
+    left: 45%;
+    height: 50px;
+    width:100px;
+    text-align: center;
+    border-radius: 25%;
+    opacity: 0.8;
+
+}
+
+.main .header_menu li
+{
+    float: left; /*выровнять меню*/
+    width: 30%;
+    text-align: center;
+}
+
+.main > header > img
+{
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 20px;     
+    transition: transform 1s; /*управление анимацией*/  
+}
+
+.main header:hover img
+{
+    transform: translateX(750px);
+}
+
+.main > section
+{     
+    background-color: greenyellow;
+    height: 500px;
+    border: double greenyellow;
+    opacity: 0.8;       
+}
+           
+.main p
+{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+           
+.main > section > .left
+{
+    float: left;
+    width: 100px; 
+    text-align: center;
+    padding-left: 0;      
+}
+     
+.main > section > .middle .content
+{
+    float: left;
+    width:500px;       
+    text-align:center;
+}
+
+.main > section > .middle h3
+{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.main > section > .middle .add
+{
+    float: right;
+    width: 100px;
+    text-align: center;     
+}
+
+.main > footer > #copyright /*???*/
+{
+    text-align:center;
+    font-style: italic;
+}
+
+.main  > footer > .info #fix
+{
+    background-color: lightgreen;
+    position: fixed;
+    bottom: 5px;
+    left: 45%;
+    height: 50px;
+    width:100px;
+    text-align: center;
+    border-radius: 25%;
+    opacity: 0.8;
+}
+
+.main .info 
+{
+    background-color: greenyellow;  
+    opacity: 0.8;  
+    margin: 0 5% 5% 5%;
+    border-radius: 10%;
+    height: 150px;        
+} 
+      
+.main .info .column
+{
+    float: left;
+    text-align: center;
+}
+  
+li
+{
+    list-style-type: none;
+}
+
+@-webkit-keyframes shake 
+{
+  100% 
+  {
+    -webkit-transform: translateX(-30px);    
+  }
+}
+
+@keyframes shake {
+    100% 
+    {
+        transform: translateX(-30px);
+    }
+}
+
+.follow_us_icon 
+{
+  -webkit-animation: shake 0.7s linear alternate-reverse infinite;
+  animation: shake 0.7s linear alternate-reverse infinite;
+}
+
+/*для отображения на всех типах дисплеев*/
+@media (min-width: 800px) and (max-width: 1200px) and (width: 100%) 
+{
+    .main > section
+    {
+        width: 100%;
+    }
+    .main > section > .left
+    {
+        width:20%; 
+    }
+    .main > section > .middle
+    {   
+        width: 80%;
+        flex-direction: column;
+    } 
+    .main > section > .middle > .content
+    {     
+        width: 70%;
+    }
+    .main .info 
+    {
+        margin: 0 5% 5% 5%;
+    }
+    .main .info .column
+    {
+        width: 30%;
+        text-align: center;
+    }
+} 

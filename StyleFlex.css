@@ -1,0 +1,215 @@
+﻿body 
+{
+    background-image: url(392824567.jpg);
+    font-family: 'Aref Ruqaa', serif;
+}
+
+h1 
+{
+    text-align: left;
+    color: blanchedalmond;
+}
+
+.follow_us_icon
+{
+	width: 60px;
+	height: 60px;
+}
+
+.main
+{
+    margin:0 auto;
+    width:800px;
+    background-color: grey;    
+    border-radius: 20px;
+}
+
+.main > header
+{
+    height: 70px; 
+}
+
+.main > header > #upper
+{
+    background-color: lightgreen;
+    position: absolute;
+    top: 5px;
+    left: 45%;
+    height: 50px;
+    width:100px;
+    text-align: center;
+    border-radius: 25%;
+    opacity: 0.8;
+}
+
+.main .header_menu li
+{
+    display: inline-block;
+    width:30%;
+    text-align: center;
+}
+
+.main header:hover img
+{
+    transform: translateX(750px);
+}
+
+.main > header > img
+{
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 20px;     
+    transition: transform 1s; /*управление анимацией*/  
+}
+
+.main > section
+{ 
+    background-color: greenyellow;
+    height: 500px;
+    border: double greenyellow;
+    display: flex;
+    opacity: 0.8;   
+}
+
+.main  p
+{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.main > section > .left
+{
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;     
+}
+
+li
+{
+    list-style-type: none;      
+}
+
+.main > section > .middle
+{   
+    margin: 0 auto; 
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}   
+
+.main > section > .middle h3
+{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}   
+
+.main > section > .middle > .content
+{     
+    text-align:center;
+    padding: 0;
+    width: 500px;
+}
+
+.main > section > .middle > .add
+{
+    text-align: center; 
+    align-self: flex-end;
+    padding: 0; 
+    width: 100px;
+}
+
+.main  > footer > h5
+{
+    text-align:center;
+    font-style: italic;
+}
+
+.main  > footer > .info #fix
+{
+    background-color: lightgreen;
+    position: fixed;
+    bottom: 5px;
+    left: 45%;
+    height: 50px;
+    width:100px;
+    text-align: center;
+    border-radius: 25%;
+    opacity: 0.8;
+}
+
+.main .info
+{
+    background-color: greenyellow;
+    margin: 0 5% 5% 5%;
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+}
+.main .info .column
+{
+    text-align: center;
+}
+
+@-webkit-keyframes shake 
+{
+  100% 
+  {
+    -webkit-transform: translateX(-30px);    
+  }
+}
+
+@keyframes shake {
+    100% 
+    {
+        transform: translateX(-30px);
+    }
+}
+
+.follow_us_icon 
+{
+  -webkit-animation: shake 0.7s linear alternate-reverse infinite;
+  animation: shake 0.7s linear alternate-reverse infinite;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) and (width: 100%) 
+{
+    .main > section
+    {
+        width: 100%;
+    }
+    .main > section > .left
+    {
+        width:20%; 
+    }
+    .main > section > .middle
+    {   
+        width: 80%;
+        flex-direction: column;
+    } 
+    .main > section > .middle > .content
+    {     
+       width: 70%;
+    }
+    .main .info
+    {
+        margin: 0 5% 5% 5%;
+    }
+    .main .info.column
+    {
+        width: 30%;
+        text-align: center;
+    } 
+    .main  > footer > .info #fix
+    {
+        position: fixed;
+        left: 45%;
+    }
+} 
+
+
